@@ -22,6 +22,7 @@ public class PasswordVault {
         m = n.nextLine();
         cipher(m);
         fileWriter();
+        sayHello();
     }
     
     static void cipher(String m) throws Exception {
@@ -66,6 +67,10 @@ public class PasswordVault {
             FileWriter fileWriter = new FileWriter(file);
             
         } catch (IOException e) {}
+    }
+    
+    private static void sayHello() {
+        System.out.println("Hello");
     }
     
 }
